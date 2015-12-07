@@ -5,6 +5,7 @@ RUN apt-get update \
 	&& apt-get install -y \
 	    wget \
 	&& mkdir -p /usr/local/src \
+	&& mkdir -p /data/ \
 	&& cd /usr/local/src \
 	&& wget https://github.com/syncthing/discosrv/releases/download/v0.12.2/discosrv-linux-amd64.tar.gz \
 	&& tar -xzf discosrv-linux-amd64.tar.gz \

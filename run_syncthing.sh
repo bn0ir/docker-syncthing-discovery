@@ -10,4 +10,4 @@ if [ ! -f "/ssl/key.pem" ]; then
 	exit 1;
 fi
 
-/usr/local/syncthing/discosrv -cert /ssl/cert.pem -key /ssl/key.pem
+/usr/local/syncthing/discosrv -cert /ssl/cert.pem -key /ssl/key.pem -db-dsn="file:///data/discosrv.db"
